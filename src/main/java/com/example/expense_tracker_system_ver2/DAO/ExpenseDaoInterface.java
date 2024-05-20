@@ -16,8 +16,8 @@ public interface ExpenseDaoInterface {
     void updateExpense(Expense expense);
 
     // delete
-    void deleteExpense(Expense expense);
+    void deleteExpense(int expenseId);
 
     // utility
-    int sumOfExpenses();
+    float sumOfExpenses();
 }
