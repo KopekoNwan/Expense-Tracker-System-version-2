@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpenseDAO {
+public class ExpenseDAO implements ExpenseDaoInterface{
     private Connection connection() {
         String url = "jdbc:sqlite:expenses.db";
         Connection connection = null;
@@ -49,6 +49,20 @@ public class ExpenseDAO {
         return expenses;
     }
 
-    // Continue on building the Update function!
+    @Override
+    public void updateExpense(Expense expense) {
+
+    }
+
+    @Override
+    public void deleteExpense(Expense expense) {
+
+    }
+
+    @Override
+    public int sumOfExpenses() {
+        return 0;
+    }
+
 
 }
