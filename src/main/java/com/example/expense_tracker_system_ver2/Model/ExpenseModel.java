@@ -1,19 +1,19 @@
 package com.example.expense_tracker_system_ver2.Model;
 
-import com.example.expense_tracker_system_ver2.DAO.ExpenseDAO;
+import com.example.expense_tracker_system_ver2.DAO.ExpenseDaoImpl;
 
 import java.util.List;
 
 public class ExpenseModel {
-    private final ExpenseDAO expenseDAO;
+    private final ExpenseDaoImpl expenseDAO;
 
     // Constructor
-    public ExpenseModel(ExpenseDAO expenseDAO) {
+    public ExpenseModel(ExpenseDaoImpl expenseDAO) {
         this.expenseDAO = expenseDAO;
     }
 
     // Create
-    public void createExpense(Expense expense) {
+    public void createExpenseModel(Expense expense) {
         expenseDAO.createExpense(expense);
     }
 
@@ -23,17 +23,17 @@ public class ExpenseModel {
     }
 
     // Update
-    public void updateExpense(Expense expense) {
+    public void updateExpenseModel(Expense expense) {
         expenseDAO.updateExpense(expense);
     }
 
     // Delete
-    public void deleteExpense(int expenseId) {
+    public void deleteExpenseModel(int expenseId) {
         expenseDAO.deleteExpense(expenseId);
     }
 
     // Utility
-    public float sumOfExpenses() {
+    public float sumOfExpensesModel() {
         return expenseDAO.sumOfExpenses();
     }
 }

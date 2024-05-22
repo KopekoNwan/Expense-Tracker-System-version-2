@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpenseDAO implements ExpenseDaoInterface{
+public class ExpenseDaoImpl implements ExpenseDao {
     private Connection connection() {
         String url = "jdbc:sqlite:expenses.db";
         Connection connection = null;

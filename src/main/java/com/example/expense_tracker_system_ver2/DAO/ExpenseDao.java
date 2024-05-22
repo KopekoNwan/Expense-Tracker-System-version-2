@@ -4,7 +4,7 @@ import com.example.expense_tracker_system_ver2.Model.Expense;
 
 import java.util.List;
 
-public interface ExpenseDaoInterface {
+public interface ExpenseDao {
 
     // create
     void createExpense(Expense expense);

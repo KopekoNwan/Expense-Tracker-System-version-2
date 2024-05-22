@@ -56,7 +56,7 @@
                 -fx-pref-height: 0;
                 }-fx-background-color: #F5E9DA;</style>
         </ScrollPane>
-        <Button fx:id="add_expense_button" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="294.0" layoutY="574.0" mnemonicParsing="false" onAction="#addExpense" prefHeight="25.0" prefWidth="27.0" style="-fx-background-radius: 100; -fx-background-color: #FDAB57;" text="+" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <Button fx:id="add_expense_button" onAction="#displayAddExpenseView" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="294.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-radius: 100; -fx-background-color: #FDAB57;" text="+" textAlignment="CENTER" textFill="WHITE" wrapText="true">
             <font>
                 <Font name="System Bold" size="25.0" />
             </font>
